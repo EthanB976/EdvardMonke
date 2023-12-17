@@ -56,8 +56,7 @@ namespace Unity.FPS.Gameplay
                     float value = Mathf.InverseLerp(lim1, lim2, m_Weapon.CurrentAmmoRatio);
                     value = Mathf.Clamp01(value);
 
-                    FuelCells[i].transform.localPosition =
-                        Vector3.Lerp(FuelCellUsedPosition, FuelCellUnusedPosition, value);
+                        
                 }
             }
         }
