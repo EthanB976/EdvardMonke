@@ -65,7 +65,6 @@ namespace Unity.FPS.UI
         {
             m_Weapon = weapon;
             WeaponCounterIndex = weaponIndex;
-            WeaponImage.sprite = weapon.WeaponIcon;
             if (!weapon.HasPhysicalBullets)
                 BulletCounter.transform.parent.gameObject.SetActive(false);
             else
@@ -75,7 +74,7 @@ namespace Unity.FPS.UI
             m_PlayerWeaponsManager = FindObjectOfType<PlayerWeaponsManager>();
             DebugUtility.HandleErrorIfNullFindObject<PlayerWeaponsManager, AmmoCounter>(m_PlayerWeaponsManager, this);
 
-            WeaponIndexText.text = (WeaponCounterIndex + 1).ToString();
+            
 
             FillBarColorChange.Initialize(1f, m_Weapon.GetAmmoNeededToShoot());
         }
@@ -88,17 +87,13 @@ namespace Unity.FPS.UI
 
             BulletCounter.text = m_Weapon.GetCarriedPhysicalBullets().ToString();
 
-            bool isActiveWeapon = m_Weapon == m_PlayerWeaponsManager.GetActiveWeapon();
+            
 
-            CanvasGroup.alpha = Mathf.Lerp(CanvasGroup.alpha, isActiveWeapon ? 1f : UnselectedOpacity,
-                Time.deltaTime * 10);
-            transform.localScale = Vector3.Lerp(transform.localScale, isActiveWeapon ? Vector3.one : UnselectedScale,
-                Time.deltaTime * 10);
-            ControlKeysRoot.SetActive(!isActiveWeapon);
+            
 
             FillBarColorChange.UpdateVisual(currenFillRatio);
 
-            Reload.gameObject.SetActive(m_Weapon.GetCarriedPhysicalBullets() > 0 && m_Weapon.GetCurrentAmmo() == 0 && m_Weapon.IsWeaponActive);
+           
         }
 
         void Destroy()
