@@ -2804,6 +2804,41 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2104015986810675393, guid: e29d43f43cc5d82499dd9926e01847d3,
+        type: 3}
+      propertyPath: MaxAmmo
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2104015986810675393, guid: e29d43f43cc5d82499dd9926e01847d3,
+        type: 3}
+      propertyPath: ClipSize
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2104015986810675393, guid: e29d43f43cc5d82499dd9926e01847d3,
+        type: 3}
+      propertyPath: AmmoReloadDelay
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2104015986810675393, guid: e29d43f43cc5d82499dd9926e01847d3,
+        type: 3}
+      propertyPath: AutomaticReload
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2104015986810675393, guid: e29d43f43cc5d82499dd9926e01847d3,
+        type: 3}
+      propertyPath: DelayBetweenShots
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2104015986810675393, guid: e29d43f43cc5d82499dd9926e01847d3,
+        type: 3}
+      propertyPath: MaxChargeDuration
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2104015986810675393, guid: e29d43f43cc5d82499dd9926e01847d3,
+        type: 3}
+      propertyPath: AmmoUsageRateWhileCharging
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4234830436940505133, guid: e29d43f43cc5d82499dd9926e01847d3,
         type: 3}
       propertyPath: aimingPivotVerticalOffset
@@ -3812,6 +3847,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: VFX_Dust
       objectReference: {fileID: 0}
+    - target: {fileID: 28905003217567911, guid: ecdbb7f81f59b934cb72306019ee7a41,
+        type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 28905003217567913, guid: ecdbb7f81f59b934cb72306019ee7a41,
         type: 3}
       propertyPath: m_RootOrder
@@ -4192,6 +4232,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2104015986810675393, guid: 25a1b0efadb966e44889fce712c8ff8d,
+        type: 3}
+      propertyPath: ClipSize
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5556,6 +5601,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: VFX_Lava
+      objectReference: {fileID: 0}
+    - target: {fileID: 6488011246168764977, guid: bf40d5ff22aca9d428655f63d45754f5,
+        type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6488011246168764991, guid: bf40d5ff22aca9d428655f63d45754f5,
         type: 3}
